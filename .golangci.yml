@@ -1,0 +1,16 @@
+linters:
+  disable-all: false
+  disable:
+    - thelper
+    - varnamelen
+    - tagliatelle
+    - wrapcheck
+linters-settings:
+  gocyclo:
+    min-complexity: 11
+issues:
+  exclude:
+    - composite
+run:
+  tests: false
+  go: "1.21"
